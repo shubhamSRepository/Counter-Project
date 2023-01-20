@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+
+#black-background{
+    height: 100vh;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 70vh;
+    width: 80vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#upper-box{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgb(182, 216, 240) 30%,rgb(240, 208, 240) ,rgb(234, 192, 234));
+    color: white;
+    word-spacing: 40px;
+    letter-spacing: 2px;
+}
+
+#text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+
+#lower-box{
+    width: 60%;
+    height: 30%;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    background-color: white;
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#display p{
+    height:100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;    
+    background-color:azure;
+}
+
+#next{
+    position: absolute;
+}
+
+
+/* animate class is used directly in javascript so that we can use dynamically apply css class */
+p.animate{
+    transform: translateY(-100%);
+    transition-duration: 0.5s;
+}
+
